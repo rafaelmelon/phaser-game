@@ -5,7 +5,13 @@ class GameScene extends Scene {
     super("scene-game");
   }
 
+  preload() {
+    this.load.image("rocket", "assets/rocket.jpg");
+  }
+
   create() {
+    this.rocket = this.add.image(400, 300, 'rocket');;
+
     // Add, scale, and make up a speed for our creature
     this.cat = this.physics.add.sprite(10, 10, "cat-like");
     this.cat.body.setAllowGravity(false);

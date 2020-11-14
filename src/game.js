@@ -7,8 +7,9 @@ const canvas = document.getElementById("game-canvas");
 const config = {
   type: Phaser.WEB_GL,
   width: 400,
-  height: 300,
+  height: 600,
   canvas,
+  autoCenter: Phaser.Scale.CENTER_BOTH,
   physics: {
     default: "arcade",
     arcade: {
